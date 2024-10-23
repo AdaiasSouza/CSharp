@@ -1,0 +1,15 @@
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/bin/Debug/net8.0/Calculadora
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/bin/Debug/net8.0/Calculadora.deps.json
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/bin/Debug/net8.0/Calculadora.runtimeconfig.json
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/bin/Debug/net8.0/Calculadora.dll
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/bin/Debug/net8.0/Calculadora.pdb
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/Calculadora.AssemblyInfoInputs.cache
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/Calculadora.AssemblyInfo.cs
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/Calculadora.csproj.CoreCompileInputs.cache
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/Calculadora.sourcelink.json
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/Calculadora.dll
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/refint/Calculadora.dll
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/Calculadora.pdb
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/Calculadora.genruntimeconfig.cache
+/home/adaias/Documentos/Code/C#/CSharp/Calculadora/obj/Debug/net8.0/ref/Calculadora.dll
