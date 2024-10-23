@@ -1,4 +1,7 @@
-﻿using System;
+﻿/*
+    Calculadora artimetica: soma, subtração, multiplicação e divisao
+*/
+using System;
 
 namespace Calculadora{
     class Operacoes{
