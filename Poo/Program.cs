@@ -5,7 +5,7 @@
 */
 using System;
 
-namespace Payments{
+namespace SistemaEnsino{
     class Program{
         static void Main(string[] args){
 
