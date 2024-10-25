@@ -9,38 +9,28 @@ namespace SistemaEnsino{
     class Program{
         static void Main(string[] args){
 
-            Pessoa aluno = new Pessoa();                          
+            Aluno aluno = new Aluno();   
+
+            // dados alunos
             aluno.NomeCompleto = "Jose";
-            aluno.Endereco = "Rua Tabajara";
             aluno.Idade = 27;
             aluno.Sexo = 'M';
+            aluno.Curso = "Ciencia da Computação";
+            aluno.Departamento = "Exatas";
+            aluno.Matricula = "7575";
+
+            // endereco
+            aluno.Endereco.Cep = "60526640";
+            aluno.Endereco.Cidade = "Fortaleza";
+            aluno.Endereco.Estado = "CE";
+            aluno.Endereco.NomeRua = "Rua Flor";
+            aluno.Endereco.NumCasa = 305;
+            
             Console.WriteLine("Nome aluno: "+aluno.NomeCompleto);            
             Console.WriteLine("Nome professor: "+aluno.NomeCompleto);
             Console.WriteLine("Endereço : "+aluno.Endereco);
             Console.WriteLine("Idade: "+aluno.Idade);
-            Console.WriteLine("Sexo: "+aluno.Sexo);
-
-            Console.WriteLine("<--------------------------->");
-
-            Aluno aluno1 = new Aluno();
-            aluno1.NomeCompleto = "Jose Camargo";
-            aluno1.Endereco = "Rua Flor de Lis";
-            aluno1.Idade = 32;
-            aluno1.Sexo = 'M';
-
-            Console.WriteLine("Nome professor: "+aluno1.NomeCompleto);
-            Console.WriteLine("Endereço : "+aluno1.Endereco);
-            Console.WriteLine("Idade: "+aluno1.Idade);
-            Console.WriteLine("Sexo: "+aluno1.Sexo);
-            
-            aluno1.Curso = "Ciências da Computação";
-            aluno1.Departamento = "Ciências Exatas";
-            aluno1.Matricula = "1231";
-
-            Console.WriteLine("Curso: "+aluno1.Curso);
-            Console.WriteLine("Departamento: "+aluno1.Departamento);
-            Console.WriteLine("Matricula: "+aluno1.Matricula);
-            Console.WriteLine("<--------------------------->");
+            Console.WriteLine("Sexo: "+aluno.Sexo);           
 
         }
     }
@@ -50,14 +40,14 @@ namespace SistemaEnsino{
         private string _NomeCompleto;
         private char _Sexo;
         private int _Idade;
-        private string _Endereco;
+        private Endereco _Endereco;
 
 
         public Pessoa(){
             // construtor
         }
 
-        public Pessoa(string NomeCompleto, char Sexo, int Idade, string Endereco){
+        public Pessoa(string NomeCompleto, char Sexo, int Idade, Endereco Endereco){
             // construtor
             _NomeCompleto = NomeCompleto;
             _Sexo = Sexo;
@@ -78,7 +68,7 @@ namespace SistemaEnsino{
             get{return _Idade;} set{_Idade = value;}
         }
 
-        public string Endereco{
+        public Endereco Endereco{
             get{return _Endereco;} set{_Endereco = value;}
         }
 
@@ -122,7 +112,7 @@ namespace SistemaEnsino{
 
     public class Professor: Pessoa{
         // atributes
-        private string __Grupo;
+        private string _Grupo;
         private string _CodigoProfessor;
         // constructor
         public Professor(){
@@ -130,17 +120,59 @@ namespace SistemaEnsino{
         }
 
         public Professor(string Grupo, string CodigoProfessor){
-            __Grupo = Grupo;
+            _Grupo = Grupo;
             _CodigoProfessor = CodigoProfessor;
         }
         // get, set
         public string Grupo{
-            get{return  __Grupo;} set{__Grupo = value;}
+            get{return  _Grupo;} set{_Grupo = value;}
         }
 
         public string CodigoProfessor{
             get{return _CodigoProfessor;} set{_CodigoProfessor = value;}
         }
         // methods
+    }
+
+    public class Endereco{
+        private string _NomeRua;
+        private int _NumCasa;
+        private string _Cep;
+        private string _Cidade;
+        private string _Estado;
+
+        // constructor
+        public Endereco(){
+
+        }
+
+        public Endereco(string NomeRua, int NumCasa, string Cep, string Cidade, string Estado){
+            _NomeRua = NomeRua;
+            _NumCasa = NumCasa;
+            _Cep = Cep;
+            _Cidade = Cidade;
+            _Estado = Estado;
+        }
+
+        public string NomeRua{
+            get{return _NomeRua;} set{_NomeRua = value;}
+        }
+
+        public int NumCasa{
+            get{return _NumCasa;} set{_NumCasa = value;}
+        }
+
+        public string Cep{
+            get{return _Cep;} set{_Cep = value;}
+        }
+
+        public string Cidade{
+            get{return _Cidade;} set{_Cidade = value;}
+        }
+
+        public string Estado{
+            get{return _Estado;} set{_Estado = value;}
+        }
+
     }
 }
