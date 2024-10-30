@@ -6,7 +6,7 @@ namespace PessoaBase{
         private string _NomeCompleto;
         private char _Sexo;
         private int _Idade;
-        private Endereco _Endereco;
+        private Endereco _Endereco;        
 
 
         public Pessoa(){
@@ -42,7 +42,7 @@ namespace PessoaBase{
             set{_Endereco = value;}
         }
 
-        // métodos       
+        // métodos             
 
 
     } // fim Pessoa

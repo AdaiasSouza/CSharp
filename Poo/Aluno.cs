@@ -1,9 +1,10 @@
 using PessoaBase;
+using CursoSuperior;
 
 namespace PessoaAluno{
     public class Aluno: Pessoa{
         // atributes
-        private string _Curso;
+        private Curso _Curso;
         private string _Departamento;
         private string _Matricula;
 
@@ -13,13 +14,13 @@ namespace PessoaAluno{
 
         }
 
-        public Aluno(string Curso, string Departamento, string Matricula){
+        public Aluno(Curso Curso, string Departamento, string Matricula){
             _Curso = Curso;
             _Departamento = Departamento;
             _Matricula = Matricula;
         }
         // get, set
-        public string Curso{
+        public Curso Curso{
             get{return _Curso;} 
             set{_Curso = value;}
         }
