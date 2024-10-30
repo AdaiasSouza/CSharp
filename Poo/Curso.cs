@@ -8,6 +8,7 @@ namespace CursoSuperior{
 
         // constructor
         public Curso(){
+            Console.WriteLine("Iniciando...");
 
         }
 

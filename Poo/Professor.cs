@@ -1,3 +1,4 @@
+using CursoSuperior;
 using PessoaBase;
 
 namespace PessoaProfessor{
@@ -5,14 +6,19 @@ namespace PessoaProfessor{
         // atributes
         private string _Grupo;
         private string _CodigoProfessor;
+
+        private Curso _Curso;
+
         // constructor
         public Professor(){
+            Console.WriteLine("Iniciando...");
 
         }
 
-        public Professor(string Grupo, string CodigoProfessor){
+        public Professor(string Grupo, string CodigoProfessor, Curso Curso){
             _Grupo = Grupo;
             _CodigoProfessor = CodigoProfessor;
+            _Curso = Curso;
         }
         // get, set
         public string Grupo{
@@ -25,5 +31,6 @@ namespace PessoaProfessor{
             set{_CodigoProfessor = value;}
         }
         // methods
+
     } // fim Professor  
 }

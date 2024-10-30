@@ -11,6 +11,7 @@ namespace PessoaBase{
 
         public Pessoa(){
             // construtor
+            Console.WriteLine("Iniciando...");
         }
 
         public Pessoa(string NomeCompleto, char Sexo, int Idade, Localizacao.Endereco Endereco){

@@ -54,7 +54,7 @@ namespace SistemaEnsino{
             Console.WriteLine("Estado: "+aluno.Endereco.Estado);
 
             // dados curso
-            
+            //...
         }
     } // fim program     
 } // fim SistemaEnsino

@@ -11,7 +11,7 @@ namespace PessoaAluno{
 
         // constructor
         public Aluno(){
-
+                Console.WriteLine("Iniciando...");
         }
 
         public Aluno(Curso Curso, string Departamento, string Matricula){
@@ -36,5 +36,8 @@ namespace PessoaAluno{
         }
 
         // methods
+        private void DadosAlunos(string matricula){
+            // describe
+        }
     }
 }
